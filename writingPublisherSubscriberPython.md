@@ -41,9 +41,9 @@ class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
-        timer_period = 0.5  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.publisher_ = self.create_publisher(String, 'topic', 10) 
+        timer_period = 0.5  # seconds 0.5초 주기 timer_callbak 호출
+        self.timer = self.create_timer(timer_period, self.timer_callback) #콜백함수
         self.i = 0
 
     def timer_callback(self):
@@ -55,11 +55,11 @@ class MinimalPublisher(Node):
 
 
 def main(args=None):
-    rclpy.init(args=args)
+    rclpy.init(args=args) #초기화
 
-    minimal_publisher = MinimalPublisher()
+    minimal_publisher = MinimalPublisher() # 노드 인스턴스를 만듬
 
-    rclpy.spin(minimal_publisher)
+    rclpy.spin(minimal_publisher) #계속 spin 돈다.
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
@@ -68,7 +68,7 @@ def main(args=None):
     rclpy.shutdown()
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': # 메인함수
     main()
 ```
 
@@ -146,12 +146,12 @@ class MinimalSubscriber(Node):
         self.subscription = self.create_subscription(
             String,
             'topic',
-            self.listener_callback,
+            self.listener_callback, #메세지 받으면 실행.
             10)
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        self.get_logger().info('I heard: "%s"' % msg.data) 
 
 
 def main(args=None):
