@@ -1,6 +1,7 @@
 # service 이해
 1. 개요
-2. 실습
+2. 실습신
+3. 서버와 클라이언트 사이 통신
    1. 환경설정
    2. ros2 service list
    3. ros2 service type

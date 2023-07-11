@@ -48,15 +48,15 @@ ros2 run turtlesim turtle_teleop_key
 rqt_graph
 ```
 
-* rqt를 이용한 rqt_graph 여는 방법
+* rqt를 이용한 rqt_graph 여는 방법스
   * Plugins > Introspection > Node Graph
 
 ![](https://docs.ros.org/en/foxy/_images/rqt_graph.png)
 
 
 * Quiz :
-  * node는? 
-  * topics은?
+  * node는?  타원
+  * topics은? 네모박스
 
 
 ### 2-3 ros2 topic list
