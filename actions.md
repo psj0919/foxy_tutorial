@@ -251,4 +251,4 @@ Result:
 Goal finished with status: SUCCEEDED
 ```
 
-* goal이 완료될때까지 계속해서 feedback으로 remaining radians를 수싢나다.
+* goal이 완료될때까지 계속해서 feedback으로 remaining radians를 수신한다.
