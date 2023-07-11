@@ -9,7 +9,7 @@
    6. ros2 interface show
    7. ros2 topic pub
    8. ros2 topic hz
-   9. 종료하기
+   9. 종료하기 
 
 ## 1. 개요
 * ROS 2 topics에 대한 개념을 이해하기 위해서 rqt_graph와 CLI 도구 사용하는 방법을 이해해야 한다.

@@ -90,10 +90,10 @@ ros2 node info /my_turtle
 * 결과
 ```
 /my_turtle
-  Subscribers:
+  Subscribers:  /데이터 수신
     /parameter_events: rcl_interfaces/msg/ParameterEvent
     /turtle1/cmd_vel: geometry_msgs/msg/Twist
-  Publishers:
+  Publishers: /데이터 송신
     /parameter_events: rcl_interfaces/msg/ParameterEvent
     /rosout: rcl_interfaces/msg/Log
     /turtle1/color_sensor: turtlesim/msg/Color
@@ -120,6 +120,6 @@ ros2 node info /my_turtle
 
 * /teleop_turtle node에 대해서도 상세 정보 얻는 명령 실행해보기
 ```bash
-ros2 node info /teleop_turtle node
+ros2 node info /teleop_turtle
 ```
 
